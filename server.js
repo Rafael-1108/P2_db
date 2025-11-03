@@ -1,6 +1,7 @@
 // Importar pacotes/bibliotecas
 import express from "express";
 import dotenv from "dotenv";
+import easterEggRoutes from "./src/routes/easterEggsRoutes.js";
 
 // Criar aplicação com Express e configurar para aceitar JSON
 const app = express();
@@ -15,6 +16,7 @@ app.get("/", (req, res) => {
     res.send("🚀 Servidor funcionando...");
 });
 
+app.use('/easterEggs', easterEggRoutes);
 
 // Aqui vão todas suas Rotas
 
