@@ -4,6 +4,7 @@
 
 //Importar o prisma Client
 import { PrismaClient } from "@prisma/client";
+
 const prisma = new PrismaClient();
 
 // Crio a variavel findAll e já exporto
