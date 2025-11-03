@@ -101,7 +101,7 @@ export const apagar = async (req, res) => {
         await EasterEggModel.deleteEasterEgg(id)
 
         res.status(200).json({
-            mensagem: 'EasterEgg0 removido com sucesso',
+            mensagem: 'EasterEgg removido com sucesso',
             EasterEggRemovido: easterEggExiste
         })
 
